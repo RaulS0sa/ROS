@@ -1,0 +1,18 @@
+<launch>
+	<!--
+	<node name="LinVel" pkg="TareaTortuga" type="LinVel" output="screen" />
+	<node name="PublicaVelocidad" pkg="TareaTortuga" type="PublicaVelocidad" output="screen" />
+	<node name="CalculaControl" pkg="TareaTortuga" type="CalculaControl" output="screen" />
+	<node name="Objetivo" pkg="TareaTortuga" type="Objetivo" output="screen" />
+	-->
+	<group>
+		<node name="turtle_node" pkg="turtlesim" type="turtlesim_node"  />
+		<node name="LinVel" pkg="TareaTortuga" type="LinVel" />
+
+		<node name="PublicaVelocidad" pkg="TareaTortuga" type="PublicaVelocidad"/>
+
+		<node name="CalculaControl" pkg="TareaTortuga" type="CalculaControl"  />
+		<node name="Objetivo" pkg="TareaTortuga" type="Objetivo" />
+		<node name="rosegraph" pkg="rqt_graph" type="rqt_graph" />
+	</group>	
+</launch>

@@ -1,0 +1,13 @@
+<launch>
+
+	<group>
+		<node name="turtle_node" pkg="turtlesim" type="turtlesim_node"  />
+		<!--
+		<node name="LinVel" pkg="TareaTortuga" type="LinVel" />
+		<node name="PublicaVelocidad" pkg="TareaTortuga" type="PublicaVelocidad"/>
+		-->
+		<node name="CalculaControl" pkg="TareaTortuga" type="CalculaControl"  />
+		<node name="Objetivo" pkg="TareaTortuga" type="Objetivo" />
+		<node name="rosegraph" pkg="rqt_graph" type="rqt_graph" />
+	</group>	
+</launch>
